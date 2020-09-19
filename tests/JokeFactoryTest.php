@@ -11,12 +11,12 @@ class JokeFactoryTest extends TestCase
     public function it_returns_a_random_joke()
     {
         $jokes = new JokeFactory([
-            'This is a joke'
+            'This is a joke',
         ]);
 
         $joke = $jokes->getRandomJoke();
 
-        $this->assertSame("This is a joke", $joke);
+        $this->assertSame('This is a joke', $joke);
     }
 
     /** @test */
